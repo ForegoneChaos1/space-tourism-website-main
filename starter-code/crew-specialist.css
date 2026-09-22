@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  font-family: "Barlow Condensed", sans-serif;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+nav figure {
+  margin-left: 60px;
+}
+.break {
+  width: 46%;
+  align-self: center;
+  height: 1px;
+  position: absolute;
+  transform: translateX(180px);
+  z-index: 1;
+  opacity: 0.3;
+}
+.mainlinks {
+  width: 45%;
+  display: flex;
+  background: rgba(120, 124, 144, 0.1);
+  backdrop-filter: blur(20px) saturate(100%);
+  -webkit-backdrop-filter: blur(20px) saturate(100%);
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 0px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+}
+.mainlinks li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.current {
+  border-bottom: 2px solid white;
+}
+ul li:not(.current) {
+  color: rgb(208, 214, 249);
+}
+ul li:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.mainlinks li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  display: block;
+}
+.mainlinks li span {
+  font-weight: 700;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  height: 100%;
+}
+section {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px 128px;
+}
+h2 {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 4px;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+h2 span {
+  opacity: 0.25;
+  margin-right: 5px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+.img {
+  width: 30%;
+  height: 100%;
+  /* padding: 30px; */
+}
+.des {
+  width: 48%;
+  height: 50%;
+  /* padding: 30px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img figure img {
+  height: 100%;
+  width: 100%;
+}
+.img figure {
+  height: 100%;
+  width: 100%;
+}
+.button {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+.buttons {
+  background-color: white;
+  opacity: 100%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+}
+.buttons:not(.current) {
+  opacity: 17.44%;
+}
+.buttons:hover {
+  opacity: 50%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main h1 {
+  font-size: 56px;
+  color: white;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 200px;
+}
+.main h3 {
+  font-size: 32px;
+  color: white;
+  opacity: 50%;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main p {
+  padding-right: 300px;
+  color: rgb(208, 214, 249);
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
