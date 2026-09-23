@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./assets/technology/background-technology-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  font-family: "Barlow Condensed", sans-serif;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+nav figure {
+  margin-left: 60px;
+}
+.break {
+  width: 46%;
+  align-self: center;
+  height: 1px;
+  position: absolute;
+  transform: translateX(180px);
+  z-index: 1;
+  opacity: 0.3;
+}
+.mainlinks {
+  width: 45%;
+  display: flex;
+  background: rgba(120, 124, 144, 0.1);
+  backdrop-filter: blur(20px) saturate(100%);
+  -webkit-backdrop-filter: blur(20px) saturate(100%);
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 0px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+}
+.mainlinks li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.current {
+  border-bottom: 2px solid white;
+}
+ul li:not(.current) {
+  color: rgb(208, 214, 249);
+}
+ul li:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.mainlinks li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  display: block;
+}
+.mainlinks li span {
+  font-weight: 700;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  height: 100%;
+}
+section {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px 0 20px 128px;
+}
+h2 {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 4px;
+  margin-left: 130px;
+  margin-top: 50px;
+}
+h2 span {
+  opacity: 0.25;
+  margin-right: 5px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+.butcontain {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 10%;
+}
+button {
+  width: 80px;
+  height: 80px;
+  color: black;
+  border-radius: 50px;
+  background-color: white;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+button:not(.clicked) {
+  color: white;
+  background-color: transparent;
+  opacity: 0.5;
+  outline: none;
+  border: 1px solid white;
+}
+button:hover {
+  opacity: 0.75;
+}
+.des {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 30px;
+  width: 40%;
+}
+.des h2 {
+  font-size: 32px;
+  margin-left: 0;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+.des h1 {
+  font-size: 56px;
+}
+.des p {
+  font-size: 18px;
+  color: rgb(208, 214, 249);
+  line-height: 1.6;
+  padding-right: 50px;
+}
+.img {
+  width: 50%;
+  height: 100%;
+}
+.img figure {
+  width: 100%;
+  height: 100%;
+}
+.img figure img {
+  width: 100%;
+  height: 100%;
+}
