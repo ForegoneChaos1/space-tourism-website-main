@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 body {
   background-image: url("./assets/home/background-home-desktop.jpg");
@@ -33,7 +34,7 @@ hr {
 ul {
   width: 45%;
   display: flex;
-  background: rgba(11, 13, 23, 0.12);
+  background: rgba(93, 104, 158, 0.12);
   backdrop-filter: blur(40px) saturate(100%);
   -webkit-backdrop-filter: blur(40px) saturate(100%);
   border: 1px solid rgba(255, 255, 255, 0);
@@ -53,8 +54,8 @@ ul li {
 .current {
   border-bottom: 2px solid white;
 }
-ul li:hover{
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5)
+ul li:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 ul li a {
   text-decoration: none;
@@ -95,15 +96,15 @@ section div {
   padding-right: 160px;
 }
 .space h1 {
-  font-size: 144px;
+  font-size: 9rem;
   color: white;
 }
 .space .mainish {
   color: #d0d6f9;
-  font-size: 38px;
+  font-size: 2.375rem;
 }
 .space p {
-  font-size: 22px;
+  font-size: 1.375rem;
   color: #d0d6f9;
 }
 .button {
@@ -118,9 +119,47 @@ section div {
   background-color: white;
   color: black;
   font-family: "Bellefair", serif;
-  font-size: 32px;
+  font-size: 2rem;
 }
 .button button:hover {
   outline: 130px solid rgba(255, 255, 255, 0.1);
   transition: outline 0.5s ease-in-out;
+}
+
+/* tablet */
+@media (max-width: 1080px) {
+  hr {
+    display: none;
+  }
+  nav {
+    gap: 40px;
+    padding-left: 40px;
+  }
+  body {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+  }
+  ul {
+    background: rgba(93, 104, 158, 0.2);
+    width: 80%;
+  }
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 100px;
+    padding:100px 128px;
+  }
+  section div {
+    width: 100%;
+    height: 49%;
+  }
+  .button{
+    align-items: center;
+    justify-content: center ;
+  }
+  .space{
+    padding-right: 0;
+  }
 }
